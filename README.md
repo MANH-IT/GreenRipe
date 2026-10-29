@@ -1,7 +1,6 @@
 # Bài tập OpenCV: Nhận diện quả chín / quả xanh trong ảnh (BGR)
 
-Chương trình **chỉ xử lý ảnh**, không dùng camera và **không dùng HSV**.
-Mặc định đọc ảnh:
+Chương trình **chỉ xử lý ảnh**. Mặc định đọc ảnh:
 
 ```
 D:\OBS\chuoixanh_chin2.jpg
@@ -22,7 +21,7 @@ Sau đó tìm contour trên từng mask, lọc theo diện tích và khoanh vùn
 ## 1. Tính năng
 
 - Đọc ảnh mặc định `D:\OBS\chuoixanh_chin2.jpg` hoặc ảnh truyền vào.
-- Phân loại **quả chín (vàng)** và **quả xanh** bằng tỉ lệ kênh BGR, không HSV.
+- Phân loại **quả chín (vàng)** và **quả xanh** bằng tỉ lệ kênh BGR.
 - Lọc nhiễu + nối vùng bằng morphology (open + close).
 - Tìm vùng bằng `cv::findContours`, lọc theo diện tích tối thiểu (mặc định 3000).
 - Tô màu: vàng cho quả chín, xanh lá cho quả xanh; vẽ khung, tâm, nhãn
@@ -133,8 +132,6 @@ Với `chuoixanh_chin2.jpg` (960×678), cách phân loại này cho:
 
 - **1 vùng quả chín** (nửa trái ảnh, diện tích ~153.900 pixel).
 - **1 vùng quả xanh** (nửa phải ảnh, diện tích ~114.400 pixel).
-
-Không có bước `cvtColor` sang HSV ở bất kỳ đâu.
 
 Lưu ý: chương trình nhận diện **vùng quả chín / vùng quả xanh**, không đếm từng
 quả riêng lẻ bên trong chùm.
