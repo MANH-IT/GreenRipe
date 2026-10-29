@@ -1,0 +1,16 @@
+build/
+out_shape.txt
+
+*.exe
+*.dll
+*.a
+*.o
+*.obj
+*.log
+
+ketqua_chuoi.png
+mask_chin.png
+mask_xanh.png
+
+.vscode/
+.idea/
