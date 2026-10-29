@@ -21,7 +21,7 @@ echo [2/2] Build...
 cmake --build build -j
 if errorlevel 1 goto :error
 
-REM Khong truyen tham so -> dung anh D:\OBS\chuoixanh_chin2.jpg
+REM Khong truyen tham so -> dung anh mau images\chuoixanh_chin2.jpg
 build\detect.exe %*
 exit /b %errorlevel%
 

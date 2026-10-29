@@ -13,8 +13,8 @@ using namespace cv;
 using namespace std;
 using namespace vision;
 
-// Anh dau vao mac dinh (khong dung camera).
-static const char* kDefaultImage = "D:\\OBS\\chuoixanh_chin2.jpg";
+// Anh mau di kem repo, chay duoc ngay sau khi clone.
+static const char* kDefaultImage = "images/chuoixanh_chin2.jpg";
 
 // Gia tri mac dinh cua bo phan loai BGR.
 static constexpr int kDefaultGreenRatio = 106;   // 1.06
@@ -50,8 +50,8 @@ static void printUsage(const char* programName) {
          << "khong dung HSV, khong dung camera.\n\n"
          << "Vi du:\n"
          << "  " << name << "\n"
-         << "  " << name << " \"D:\\OBS\\chuoixanh_chin2.jpg\"\n"
-         << "  " << name << " \"D:\\OBS\\chuoixanh_chin2.jpg\" --no-gui\n"
+         << "  " << name << " images/chuoixanh_chin2.jpg\n"
+         << "  " << name << " images/chuoixanh_chin2.jpg --no-gui\n"
          << "  " << name << " -o ketqua.png --mask-chin chin.png --mask-xanh xanh.png\n\n"
          << "Tuy chon:\n"
          << "  -o, --out <path>        anh ket qua (mac dinh " << Params().outPath << ")\n"

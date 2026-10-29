@@ -8,9 +8,9 @@ out_shape.txt
 *.obj
 *.log
 
-ketqua_chuoi.png
-mask_chin.png
-mask_xanh.png
+/ketqua_chuoi.png
+/mask_chin.png
+/mask_xanh.png
 
 .vscode/
 .idea/
