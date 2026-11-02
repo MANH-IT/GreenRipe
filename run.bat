@@ -3,6 +3,11 @@ setlocal
 
 set "MSYS=C:\msys64\mingw64"
 set "PATH=%MSYS%\bin;%PATH%"
+
+REM Backend Qt6 co the khong hien cua so tren mot so ban Windows;
+REM chon Win32 de cua so hien binh thuong.
+set "OPENCV_UI_BACKEND=WIN32"
+
 cd /d "%~dp0"
 
 if exist "%MSYS%\lib\cmake\opencv5" (
